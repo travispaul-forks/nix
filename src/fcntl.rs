@@ -83,7 +83,6 @@ libc_bitflags!(
         #[cfg_attr(docsrs, doc(cfg(all())))]
         O_DIRECT;
         /// If the specified path isn't a directory, fail.
-        #[cfg(not(any(target_os = "illumos", target_os = "solaris")))]
         #[cfg_attr(docsrs, doc(cfg(all())))]
         O_DIRECTORY;
         /// Implicitly follow each `write()` with an `fdatasync()`.
